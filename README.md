@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="media/DataLoam_logo_text.svg" width="260" alt="DataLoam" />
+  <img src="media/DataLoam_logo_text.png" width="260" alt="DataLoam" />
 </p>
 
 # DataLoam
@@ -9,15 +9,15 @@
 DataLoam keeps the database workflow inside your editor: browse connected databases, write SQL with real schema context, inspect results, format queries, export data, and ask AI for help when a query or schema gets complex.
 
 <p align="center">
-  <img src="media/providers/postgres.svg" width="44" alt="PostgreSQL" />
+  <img src="media/providers/postgres.png" width="44" alt="PostgreSQL" />
   &nbsp;&nbsp;
-  <img src="media/providers/mysql.svg" width="44" alt="MySQL" />
+  <img src="media/providers/mysql.png" width="44" alt="MySQL" />
   &nbsp;&nbsp;
-  <img src="media/providers/mssql.svg" width="44" alt="Microsoft SQL Server" />
+  <img src="media/providers/mssql.png" width="44" alt="Microsoft SQL Server" />
   &nbsp;&nbsp;
-  <img src="media/providers/sqlite.svg" width="44" alt="SQLite" />
+  <img src="media/providers/sqlite.png" width="44" alt="SQLite" />
   &nbsp;&nbsp;
-  <img src="media/providers/mongodb.svg" width="44" alt="MongoDB" />
+  <img src="media/providers/mongodb.png" width="44" alt="MongoDB" />
 </p>
 
 <p align="center">
