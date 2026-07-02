@@ -2,8 +2,6 @@
   <img src="media/DataLoam_logo_text.png" width="260" alt="DataLoam" />
 </p>
 
-# DataLoam
-
 **A database editor for VS&nbsp;Code and Cursor with schema-aware autocomplete, query results, database navigation, and AI assistance in the same workspace.**
 
 DataLoam keeps the database workflow inside your editor: browse connected databases, write SQL with real schema context, inspect results, format queries, export data, and ask AI for help when a query or schema gets complex.
