@@ -1,11 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Documentation
+  - name: Read the docs
     url: https://www.dataloam.io/docs
     about: Guides for connecting databases, writing queries, and using the AI assistant.
-  - name: Questions and account or billing help
-    url: mailto:support@dataloam.io
-    about: For usage questions, account, or billing, email support@dataloam.io.
-  - name: Report a security vulnerability
-    url: https://github.com/VPALGO-s-r-o/DataLoam/security/policy
-    about: Please do not report security issues publicly. Follow the security policy instead.
+  - name: Questions, account, or billing
+    url: https://github.com/VPALGO-s-r-o/DataLoam/blob/main/SUPPORT.md
+    about: Not a bug? Email support@dataloam.io. See the support page for details.
