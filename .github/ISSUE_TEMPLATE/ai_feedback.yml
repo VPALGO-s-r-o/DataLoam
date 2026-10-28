@@ -1,0 +1,91 @@
+name: AI assistant feedback
+description: The AI assistant gave a wrong answer, wrong query, or did something unexpected.
+title: "[AI]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Title format:** `[AI]: <what the assistant did wrong>`
+        - ✅ `[AI]: Generated query uses a column that doesn't exist (MySQL)`
+        - ✅ `[AI]: Agent created a new .sql file instead of using the open console`
+        - ❌ `[AI]: bad answer`
+
+        Use this form for AI answers, generated queries, or agent actions that were wrong or surprising.
+        **Redact sensitive schema names, data, and credentials** before submitting.
+
+  - type: textarea
+    id: prompt
+    attributes:
+      label: What did you ask?
+      description: Your prompt, as close to the original as possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What did the AI do?
+      description: The answer, generated query, or action it took (e.g. created a file, ran a query).
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: database
+    attributes:
+      label: Database
+      options:
+        - PostgreSQL
+        - MySQL
+        - Microsoft SQL Server
+        - SQLite
+        - MongoDB
+        - Not database-specific
+    validations:
+      required: true
+
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: The AI model selected in DataLoam, if you know it.
+
+  - type: input
+    id: version
+    attributes:
+      label: DataLoam version
+      placeholder: e.g. 0.3.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: editor
+    attributes:
+      label: Editor
+      options:
+        - VS Code
+        - Cursor
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag and drop images here.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I removed passwords, connection strings, and other sensitive data from this report.
+          required: true

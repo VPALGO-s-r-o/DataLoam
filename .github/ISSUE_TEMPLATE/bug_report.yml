@@ -1,0 +1,152 @@
+name: Bug report
+description: Something in DataLoam is broken or behaves unexpectedly.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Title format:** `[Bug]: <short summary of what's wrong>`
+        - ✅ `[Bug]: Autocomplete doesn't suggest columns inside a CTE (PostgreSQL)`
+        - ✅ `[Bug]: CSV export drops rows over 10,000`
+        - ❌ `[Bug]: doesn't work`
+
+        Thanks for reporting a bug. **Do not paste passwords, connection strings, API keys, or sensitive data** — redact them before submitting.
+        Security issues should be reported privately, see [SECURITY.md](https://github.com/VPALGO-s-r-o/DataLoam/blob/main/SECURITY.md).
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Connect to ...
+        2. Run query ...
+        3. See error ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Connections
+        - Database explorer
+        - Query editor
+        - Autocomplete
+        - Query results
+        - Export
+        - SQL formatting
+        - AI assistant
+        - Sign-in / account
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: database
+    attributes:
+      label: Database
+      multiple: true
+      options:
+        - PostgreSQL
+        - MySQL
+        - Microsoft SQL Server
+        - SQLite
+        - MongoDB
+        - Not database-specific
+    validations:
+      required: true
+
+  - type: input
+    id: database-version
+    attributes:
+      label: Database server version
+      placeholder: e.g. PostgreSQL 16.4, MySQL 8.0.36
+
+  - type: dropdown
+    id: connection
+    attributes:
+      label: How do you connect?
+      multiple: true
+      options:
+        - Local install
+        - Docker
+        - Cloud-hosted (RDS, Azure, Atlas, Supabase, ...)
+        - SSH tunnel
+        - SSL/TLS
+        - Other
+
+  - type: input
+    id: version
+    attributes:
+      label: DataLoam version
+      description: Extensions view → DataLoam, or `Help → About` in your editor.
+      placeholder: e.g. 0.3.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: editor
+    attributes:
+      label: Editor
+      options:
+        - VS Code
+        - Cursor
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: editor-version
+    attributes:
+      label: Editor version
+      placeholder: e.g. VS Code 1.95.0
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: e.g. macOS 15.1 (Apple Silicon), Windows 11, Ubuntu 24.04
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Open `View → Output` and select **DataLoam** in the dropdown. Paste relevant lines (redact sensitive data).
+      render: text
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: Drag and drop images or videos here.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and this is not a duplicate.
+          required: true
+        - label: I removed passwords, connection strings, and other sensitive data from this report.
+          required: true

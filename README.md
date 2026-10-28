@@ -82,5 +82,11 @@ DataLoam is designed for daily database work across SQL and NoSQL projects:
 
 - Website: [dataloam.io](https://www.dataloam.io)
 - Documentation: [dataloam.io/docs](https://www.dataloam.io/docs)
-- Pricing: [dataloam.io/pricing](https://www.dataloam.ai/pricing)
-- Issues: [Github](https://github.com/VPALGO-s-r-o/DataLoam)
+- Pricing: [dataloam.io/pricing](https://www.dataloam.io/pricing)
+- Issues: [GitHub Issues](https://github.com/VPALGO-s-r-o/DataLoam/issues/new/choose)
+- Support: [support@dataloam.io](mailto:support@dataloam.io)
+- Security: [SECURITY.md](SECURITY.md)
+
+## Feedback
+
+This repository is the public issue tracker for DataLoam. The extension itself is proprietary software by VPALGO s.r.o.; its source code is not published here. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to report bugs and request features.

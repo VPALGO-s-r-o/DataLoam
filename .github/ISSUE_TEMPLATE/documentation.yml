@@ -1,0 +1,45 @@
+name: Documentation
+description: Something on dataloam.io/docs is wrong, unclear, or missing.
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Title format:** `[Docs]: <page or topic> – <what's wrong>`
+        - ✅ `[Docs]: SSH tunnel setup – missing key file option`
+        - ✅ `[Docs]: No guide for connecting to Azure SQL`
+        - ❌ `[Docs]: docs are wrong`
+
+  - type: input
+    id: page
+    attributes:
+      label: Page URL
+      description: Leave empty if the documentation is missing entirely.
+      placeholder: https://www.dataloam.io/docs/...
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of problem
+      options:
+        - Incorrect or outdated
+        - Unclear or confusing
+        - Missing content
+        - Broken link or image
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong or missing?
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested fix
+      description: What should the docs say instead?
