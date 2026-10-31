@@ -85,6 +85,7 @@ DataLoam is designed for daily database work across SQL and NoSQL projects:
 - Pricing: [dataloam.io/pricing](https://www.dataloam.io/pricing)
 - Install: [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=VPALGOsro.dataloam) · [Open VSX](https://open-vsx.org/extension/VPALGOsro/dataloam) (Cursor and other VS Code-compatible editors)
 - Changelog: [Release notes](https://marketplace.visualstudio.com/items/VPALGOsro.dataloam/changelog)
+- Community: [Discord](https://discord.gg/2skjWP88af)
 - Issues: [GitHub Issues](https://github.com/VPALGO-s-r-o/DataLoam/issues/new/choose)
 - Support: [support@dataloam.io](mailto:support@dataloam.io)
 - Security: [SECURITY.md](SECURITY.md)
